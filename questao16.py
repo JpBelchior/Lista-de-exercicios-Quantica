@@ -21,7 +21,9 @@ n = int(input("Digite o tamanho das matrizes (n): "))
 matriz_complexa = np.array([[complex(input(f"Matriz [{i}][{j}] (real, imaginário): ")) for j in range(n)] for i in range(n)])
 
 # Calcula a transposta, conjugada e adjunta da matriz complexa fornecida
-transposta, conjugada, dagger = matriz_transposta_conjugada_dagger(matriz_complexa)
+transposta= matriz_transposta_conjugada_dagger(matriz_complexa)
+conjugada=  matriz_transposta_conjugada_dagger(matriz_complexa)
+dagger = matriz_transposta_conjugada_dagger(matriz_complexa)
 
 # Exibe os resultados
 print("\nTransposta da matriz:")
